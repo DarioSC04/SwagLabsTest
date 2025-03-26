@@ -19,5 +19,5 @@ LoginKeyword
     Click Element    ${btn_login_login}
 
 LogoutKeyword
-    Wait Until Element Is Visible    ${btn_login_login}    3s
-    Click Element    ${btn_login_login}
+    Wait Until Element Is Visible    ${btn_product_logout}    3s
+    Click Element    ${btn_product_logout}

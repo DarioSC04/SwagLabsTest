@@ -4,7 +4,7 @@ Resource    ../Ressources/LoggingKeywords.robot
 
 *** Test Cases ***
 BasicLogin
-    Login    standart_user  secret_sauce
+    Login    standard_user  secret_sauce
 
 *** Keywords ***
 Login

@@ -1,6 +1,6 @@
 #Standart Locators
 
-url = "file:///C:/Users/I589037/Downloads/swag_labs%20(1).html"
+url = "https://dariosc04.github.io/SwagLabsTest/"
 
 #Login Elements
 txt_login_username= "id=username"

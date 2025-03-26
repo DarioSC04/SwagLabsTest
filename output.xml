@@ -1,81 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.12.9 on win32)" generated="2025-03-26T11:05:29.847532" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.12.9 on win32)" generated="2025-03-26T13:25:33.949134" rpa="false" schemaversion="5">
 <suite id="s1" name="LogInTest" source="C:\Users\I589037\PycharmProjects\SwagLabsTest\POM\TestCases\LogInTest.robot">
 <test id="s1-t1" name="BasicLogin" line="6">
-<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
-<arg>1s</arg>
-<doc>Sets the timeout that is used by various keywords.</doc>
-<status status="PASS" start="2025-03-26T11:05:30.141526" elapsed="0.000000"/>
-</kw>
 <kw name="Login">
 <kw name="OpenbrowserKeyword" owner="LoggingKeywords">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-03-26T11:05:30.142569" level="INFO">Opening browser 'chrome' to base url 'file:///C:/Users/I589037/Downloads/swag_labs%20(1).html'.</msg>
+<msg time="2025-03-26T13:25:34.296210" level="INFO">Opening browser 'chrome' to base url 'https://dariosc04.github.io/SwagLabsTest/'.</msg>
 <arg>${URL}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-03-26T11:05:30.142569" elapsed="2.098406"/>
+<status status="PASS" start="2025-03-26T13:25:34.295209" elapsed="3.116990"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-03-26T11:05:32.240975" elapsed="0.038640"/>
+<status status="PASS" start="2025-03-26T13:25:37.412199" elapsed="0.080706"/>
 </kw>
-<status status="PASS" start="2025-03-26T11:05:30.142569" elapsed="2.137046"/>
+<status status="PASS" start="2025-03-26T13:25:34.295209" elapsed="3.198696"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-26T13:25:38.494393" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-26T13:25:37.493905" elapsed="1.000488"/>
 </kw>
 <kw name="LoginKeyword" owner="LoggingKeywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-03-26T11:05:32.280611" level="INFO">Typing text 'standart_user' into text field 'id=username'.</msg>
+<msg time="2025-03-26T13:25:38.494902" level="INFO">Typing text 'standard_user' into text field 'id=username'.</msg>
 <arg>${txt_login_username}</arg>
 <arg>${USERNAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-26T11:05:32.280611" elapsed="0.260190"/>
+<status status="PASS" start="2025-03-26T13:25:38.494902" elapsed="0.232118"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-03-26T11:05:32.540801" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<msg time="2025-03-26T13:25:38.727020" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
 <arg>${txt_login_password}</arg>
 <arg>${PASSWORD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-26T11:05:32.540801" elapsed="0.120552"/>
+<status status="PASS" start="2025-03-26T13:25:38.727020" elapsed="0.123610"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-03-26T11:05:32.661353" level="INFO">Clicking element 'id=login-button'.</msg>
+<msg time="2025-03-26T13:25:38.850630" level="INFO">Clicking element 'id=login-button'.</msg>
 <arg>${btn_login_login}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-26T11:05:32.661353" elapsed="0.079541"/>
+<status status="PASS" start="2025-03-26T13:25:38.850630" elapsed="0.062276"/>
 </kw>
 <arg>${USERNAME}</arg>
 <arg>${PASSWORD}</arg>
-<status status="PASS" start="2025-03-26T11:05:32.280611" elapsed="0.460283"/>
+<status status="PASS" start="2025-03-26T13:25:38.494393" elapsed="0.418513"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-26T13:25:40.914386" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-26T13:25:38.913900" elapsed="2.001002"/>
 </kw>
 <kw name="LogoutKeyword" owner="LoggingKeywords">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${btn_login_login}</arg>
+<arg>${btn_product_logout}</arg>
 <arg>3s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-03-26T11:05:32.741893" elapsed="0.019000"/>
+<status status="PASS" start="2025-03-26T13:25:40.915436" elapsed="0.050477"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-03-26T11:05:32.760893" level="INFO">Clicking element 'id=login-button'.</msg>
-<arg>${btn_login_login}</arg>
+<msg time="2025-03-26T13:25:40.965913" level="INFO">Clicking element 'xpath=//*[@id='product-page']/div[1]/div/button'.</msg>
+<arg>${btn_product_logout}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-26T11:05:32.760893" elapsed="0.071007"/>
+<status status="PASS" start="2025-03-26T13:25:40.965913" elapsed="0.159767"/>
 </kw>
-<status status="PASS" start="2025-03-26T11:05:32.740894" elapsed="0.092021"/>
+<status status="PASS" start="2025-03-26T13:25:40.915436" elapsed="0.210244"/>
 </kw>
 <kw name="ClosebrowserKeyword" owner="LoggingKeywords">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-03-26T11:05:32.834427" elapsed="2.242108"/>
+<status status="PASS" start="2025-03-26T13:25:41.127653" elapsed="2.404828"/>
 </kw>
-<status status="PASS" start="2025-03-26T11:05:32.833914" elapsed="2.242621"/>
+<status status="PASS" start="2025-03-26T13:25:41.126658" elapsed="2.405823"/>
 </kw>
-<arg>standart_user</arg>
+<arg>standard_user</arg>
 <arg>secret_sauce</arg>
-<status status="PASS" start="2025-03-26T11:05:30.141526" elapsed="4.935009"/>
+<status status="PASS" start="2025-03-26T13:25:34.294208" elapsed="9.238273"/>
 </kw>
-<status status="PASS" start="2025-03-26T11:05:30.140527" elapsed="4.937008"/>
+<status status="PASS" start="2025-03-26T13:25:34.294208" elapsed="9.238273"/>
 </test>
-<status status="PASS" start="2025-03-26T11:05:29.849532" elapsed="5.228003"/>
+<status status="PASS" start="2025-03-26T13:25:33.967650" elapsed="9.565831"/>
 </suite>
 <statistics>
 <total>
