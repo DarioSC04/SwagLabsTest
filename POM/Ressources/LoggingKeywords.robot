@@ -6,7 +6,7 @@ Variables   ../PageObject/Locators.py
 *** Keywords ***
 
 OpenbrowserKeyword
-    Open Browser    ${URL}  chrome
+    Open Browser    ${URL}   headlesschrome
     Maximize Browser Window
 
 ClosebrowserKeyword
